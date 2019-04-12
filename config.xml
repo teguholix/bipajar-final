@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<widget id="com.teguh.bipajar" version="1.0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>BIPA Belajar</name>
+	<description>BIPA Belajar</description>
+	<author href="http://www.ahlimedia.com" email="penjualide@gmail.com">Teguh Arie Sandy</author>
+
+	<icon src="www/icon-256.png" width="256" height="256" density="xxxhdpi" />
+	<icon src="www/icon-128.png" width="128" height="128" density="xhdpi" />
+
+	<preference name="android-targetSdkVersion" value="26" />
+
+	<preference name="orientation" value="default" />
+	<preference name="fullscreen" value="true" />
+	<preference name="DisallowOverscroll" value="true" />
+	<preference name="AllowInlineMediaPlayback" value="true" />
+
+	<config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist"><true/></config-file>
+	<config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist"><false/></config-file>
+
+
+	<preference name="deployment-target" value="10.0" />
+	<preference name="android-minSdkVersion" value="21" />
+	<preference name="xwalkMultipleApk" value="true" />
+	<preference name="buildArchitecture" value="armv7" />
+	<access origin="*" />
+
+	<plugin name="cordova-custom-config" />
+	<plugin name="cordova-plugin-dialogs" />
+	<plugin name="cordova-plugin-media" />
+	<plugin name="cordova-plugin-statusbar" />
+	<plugin name="cordova-plugin-whitelist" />
+	<plugin name="cordova-plugin-wkwebview-engine" />
+	<plugin name="https://github.com/teguholix/Cordova-Permission-Microphone" />
+	<plugin name="https://github.com/teguholix/Cordova-Webview-Plus" />
+	<plugin name="https://github.com/MBuchalik/cordova-build-architecture" />
+	<plugin name="https://github.com/teguholix/Cordova-Permission-SD-Card" />
+	<plugin name="cordova-android-support-gradle-release" spec="^2.0.1">
+        <variable name="ANDROID_SUPPORT_VERSION" value="27.+" />
+    </plugin>
+
+	<engine name="ios" />
+	<engine name="android" />
+</widget>
